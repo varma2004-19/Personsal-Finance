@@ -23,7 +23,7 @@ app.use(helmet());
 app.use(limiter);
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['your-production-domain.com'] 
+    ? ['https://personsal-finance-t9d8.vercel.app'] 
     : ['http://localhost:3000'],
   credentials: true
 }));
